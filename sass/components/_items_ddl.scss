@@ -1,0 +1,148 @@
+.list__item
+{
+    &.layout__item
+    {
+        &:hover
+        {
+            .submenu
+            {
+                display: block;
+                .submenu__item
+                { 
+                    &.topbar__item
+                    {
+                        @include hoverddl(-1rem);
+                    }
+                    &.header__item
+                    {
+                        @include hoverddl(2rem);
+                    }
+                    &.mainmenu__item
+                    {
+                        @include hoverddl(5rem);
+                    }
+                    &.pagetitle__item
+                    {
+                        @include hoverddl(8rem);
+                    }
+                    &.pagemenu__item
+                    {
+                        @include hoverddl(11rem);
+                    }
+                    &.sidebars__item
+                    {
+                        @include hoverddl(14rem);
+                    }
+                    &.footers__item
+                    {
+                        @include hoverddl(17rem);
+                    }
+                    &.options__item
+                    {
+                        @include hoverddl(20rem);
+                    }
+                    &.layoutdemons__item
+                    {
+                        @include hoverddl(22rem);
+                    }
+                }
+            }
+        }
+    }
+
+    &.features__item
+    {
+        &:hover
+        {
+            .submenu
+            {
+                display: block;
+                .submenu__item
+                { 
+                    &.sliders__item
+                    {
+                        @include hoverddl(-1rem);
+                    }
+                    &.widgets__item
+                    {
+                        @include hoverddl(2rem);
+                    }
+                    &.pageloaders__item
+                    {
+                        @include hoverddl(5rem);
+                    }
+                    &.modalautoopen__item
+                    {
+                        @include hoverddl(7rem);
+                    }
+                    &.cookienotify__item
+                    {
+                        @include hoverddl(10rem);
+                    }
+                    &.menulabels__item
+                    {
+                        @include hoverddl(13rem);
+                    }
+                }
+            }
+        }
+    }
+
+    &.elements__item
+    {
+        &:hover
+        {
+            .ddllist
+            {
+                display: block;
+            }
+        }
+    }
+    &.portoflio__item
+    {
+        &:hover
+        {
+            .ddllist
+            {
+                display: block;
+            }
+        }
+    }
+    &.pages__item
+    {
+        &:hover
+        {
+            .submenu
+            {
+                display: block;
+                .submenu__item
+                { 
+                    &.sliders__item
+                    {
+                        @include hoverddl(-1rem);
+                    }
+                    &.widgets__item
+                    {
+                        @include hoverddl(2rem);
+                    }
+                    &.pageloaders__item
+                    {
+                        @include hoverddl(5rem);
+                    }
+                    &.modalautoopen__item
+                    {
+                        @include hoverddl(7rem);
+                    }
+                    &.cookienotify__item
+                    {
+                        @include hoverddl(10rem);
+                    }
+                    &.menulabels__item
+                    {
+                        @include hoverddl(13rem);
+                    }
+                }
+            }
+        }
+    }
+}

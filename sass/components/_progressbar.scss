@@ -1,0 +1,166 @@
+.company__progress
+{
+    list-style: none;
+    margin: 2rem;
+    display: flex;
+    width: 110rem;
+    justify-content: space-around;
+    .progress__content
+    {
+        width: 38rem;
+        .content__p
+        {
+            width: 28rem;
+            font-size: 1.9rem;
+            line-height: 3rem;
+            color: $graycolor;
+        }
+        .content__list
+        {
+            margin: 2rem 0;
+            .list__skill
+            {
+                display: flex;
+                justify-content: space-between;
+                font-size: 1.5rem;
+            }
+            .list__bar
+            {
+                background: $whitecolor;
+                display: block;
+                height: 0.8rem;
+                overflow: hidden;
+                border-radius: 0.3rem;
+                
+                .bar__span
+                {
+                    height: 0.8rem;
+                    background: blue;
+                    float: left;
+                }
+                .bar__html
+                {
+                    width: 100%;
+                    animation: html 2s;
+                }
+                .bar__css
+                {
+                    width: 94%;
+                    animation: css 2s;
+                }
+                .bar__jquery
+                {
+                    width: 89%;
+                    animation: jquery 2s;
+                }
+                .bar__mysql
+                {
+                    width: 78%;
+                    animation: mysql 2s;
+                }
+                .bar__php
+                {
+                    width: 75%;
+                    animation: php 2s;
+                }
+                @keyframes html {
+                    0%
+                    {
+                        width: 0%;
+                    }
+                    100%
+                    {
+                        width: 100%;
+                    }
+                }
+                @keyframes css {
+                    0%
+                    {
+                        width: 0%;
+                    }
+                    100%
+                    {
+                        width: 94%;
+                    }
+                }
+                @keyframes jquery {
+                    0%
+                    {
+                        width: 0%;
+                    }
+                    100%
+                    {
+                        width: 89%;
+                    }
+                }
+                @keyframes mysql {
+                    0%
+                    {
+                        width: 0%;
+                    }
+                    100%
+                    {
+                        width: 78%;
+                    }
+                }
+                @keyframes php {
+                    0%
+                    {
+                        width: 0%;
+                    }
+                    100%
+                    {
+                        width: 75%;
+                    }
+                }
+            }
+        }
+    }
+    .progress__blog
+    {
+        .blog__title
+        {
+            margin-bottom: 2rem;
+        }
+        .title__entry
+        {
+            display: flex;
+            margin-bottom: 1rem;
+            .entry__img
+            {
+                width: 8rem;
+                height: 6rem;
+            }
+            .entry__content
+            {
+                display: flex;
+                flex-direction: column;
+                line-height: 3rem;
+                .content__a
+                {
+                    margin-left: 0.9rem;
+                    text-decoration: none;
+                    color: rgb(53, 52, 52);
+                    &:hover
+                    {
+                        color: $bluecolor;
+                    }
+                }
+                .content__category
+                {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-evenly;
+                    .category__date
+                    {
+                        color: $graycolor;
+                    }
+                    .category__category
+                    {
+                        color: $graycolor;
+                    }
+                }
+            }
+        }
+    }
+}

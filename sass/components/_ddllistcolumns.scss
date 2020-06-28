@@ -1,0 +1,76 @@
+.ddllist
+{
+    display: none;
+    position: absolute;
+    right: 10rem;
+    width: 114rem;
+    height: 38.1rem;
+    border-style: solid;
+    background-color: $whitecolor;
+    padding: 0rem 1rem;
+    border-radius: 0.5rem;
+    margin-top: 1.5rem;
+    border-color: #f8f8f8;
+    border-width: 0.2rem;
+    .ddllist__column 
+    {
+        line-height: 3.3rem;
+        width: 18.5rem;
+        height: 39.8rem;
+        padding: 3rem;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        .column__item
+        {
+            display: flex;
+            justify-content: space-between; 
+            .item__link
+            {
+                text-decoration: none;    
+                font-size: 1.4rem;
+                color: rgb(48, 48, 48); 
+                &:hover
+                {
+                    color: blue;
+                    .item__icon
+                    {
+                        color:rgb(0, 0, 255);
+                    }
+                }
+            }
+            
+        }
+    } 
+    .listword
+    {
+        margin-left: 4rem;
+        position: absolute;
+        top: 29rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .listtxt
+        {
+            font-size: 6.5rem;
+            .span
+            {
+                color: blue;
+            }
+        }
+        .listbtn
+        {
+            margin-left: 9rem;
+            .listbtnn
+            {
+                border-radius: 1rem;
+                width: 18rem;
+                padding: 1rem 1rem;
+                &:hover
+                {
+                    box-shadow: 4px 8px 16px #dedede
+                }
+            }
+        }
+    }   
+}

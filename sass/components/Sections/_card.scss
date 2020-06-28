@@ -1,0 +1,61 @@
+.container
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20rem;
+    width: 151rem;
+
+    .card
+    {
+        display: grid;
+        grid-template-areas:  "area-1 area-2 area-3"
+                              "area-4 area-4 area-3"
+                              "area-4 area-4 area-5";
+        .card-one
+        {
+            width: 37rem;
+            grid-area: area-1;
+        }
+        .card-two
+        {
+            width: 37rem;
+            grid-area: area-2;
+        }
+        .card-three
+        {
+            grid-area: area-3;
+        }
+        .card-four
+        {
+            width: 74rem;
+            grid-area: area-4;
+        }
+        .card-five
+        {
+            grid-area: area-5;
+        }
+
+        @media (max-width: 791px) {
+            display: flex;
+            flex-direction: column;
+            .card-one{
+                width: 50%;
+            }
+            .card-two{
+                width: 50%;
+            }
+            .card-three{
+                width: 50%;
+            }
+            .card-four{
+                width: 50%;
+            }
+            .card-five{
+                width: 50%;
+            }
+
+        }
+    }
+}

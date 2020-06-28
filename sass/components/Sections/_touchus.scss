@@ -1,0 +1,65 @@
+.touchus
+{
+    display: inline-flex;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: $bggraycolor;
+    .touchus__content
+    {
+        margin-top: 10rem ;
+        width: 57rem;
+        height: 39rem;
+        margin-right: 10rem;
+        .content__head
+        {
+            color: $blackcolor;
+            font-size: 3.3rem;            
+            margin-bottom: 1.5rem;
+        }
+        .content__span
+        {
+            color: $graycolor;
+            font-size: 1.9rem;  
+        }
+        .content__quart
+        {
+            margin-top: 2rem ;
+            display: grid;
+            grid-template-areas:  "area-1 area-2"
+                                  "area-3 area-4";
+            .head__title, .head__text
+            {
+                color: $middlegraycolor;
+            }
+            .quart__head--one
+            {
+                grid-area: area-1;
+            }
+            .quart__head--two
+            {
+                grid-area: area-2;
+            }
+            .quart__head--three
+            {
+                grid-area: area-3;
+            }
+            .quart__head--four
+            {
+                grid-area: area-4;
+            }
+            .head__text
+            {
+                margin-top: 1rem;
+                margin-bottom: 1rem ;
+                width: 18rem;
+            }
+        }
+        .content__social
+        {
+            color: $blackcolor;
+            margin-top: 2rem;
+            margin-bottom: 1.5rem;
+        }
+    }
+}

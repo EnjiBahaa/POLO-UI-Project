@@ -1,0 +1,20 @@
+.sub__submenu
+{
+    position: absolute;
+    list-style-type: none;
+    border-style: solid;
+    background-color: $whitecolor;
+    border-color: #f8f8f8;
+    border-width: 0.2rem;
+    padding: 1rem 2rem;
+    border-radius: 0.5rem;
+    margin-top: 1.5rem;
+
+    .sub__submenu__item
+    {     
+        padding-top: 0.5rem;
+        padding-bottom: 1rem;
+        min-width: 14rem;
+        color: $blackcolor;
+    }
+}

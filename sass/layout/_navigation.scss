@@ -1,0 +1,112 @@
+.nav
+{
+    background-image:linear-gradient(to bottom,#bb01ff85, 100%);
+    position: sticky;
+    width: 100%;
+    height: 9rem;
+    top: 0;
+    z-index: 10;
+    .header
+    {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .header__logo
+        {
+            .header__img
+            {
+                height: auto; 
+                width: auto;
+            }
+        }
+        .header__list
+        {
+            @media (max-width: 61.93em) {
+                display: none;
+            }
+
+            .submenu, .ddllist
+            {
+                z-index: 1;
+            }
+        }
+        .header__button
+        {
+            .btn__accordion
+            {
+                display: none;
+                @media (max-width: 61.93em) {
+                    display: block;
+                }
+            }
+            .btn--rounded--whitebg
+            {
+                @media (max-width: 61.93em) {
+                    display: none;
+                }
+            }
+        }
+    }
+    
+}
+.navtwo
+{
+    background-image:linear-gradient(to bottom,#bb01ff85, 100%);
+    position: fixed;
+    height: 9rem;
+    z-index: 1;
+    width: 100%;
+    top: 0;
+    .header
+    {
+        background: #fff;
+        transition: all .4s ease-in-out;
+        box-shadow: 0 12px 6px rgba(0,0,0,.06);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .header__logo
+        {
+            .header__img
+            {
+                height: auto; 
+                width: auto;
+                @media (max-width: 61.93em) {
+                    text-align: center;
+                }
+            }
+        }
+        .header__list
+        {
+            @media (max-width: 61.93em) {
+                display: none;
+            }
+
+            .submenu, .ddllist
+            {
+                z-index: 1;
+            }
+        }
+        .header__button
+        {
+            .btn__accordion
+            {
+                display: none;
+                @media (max-width: 61.93em) {
+                    display: block;
+                }
+            }
+            .btn--rounded--whitebg
+            {
+                @media (max-width: 61.93em) {
+                    display: none;
+                }
+            }
+        }
+    }
+    // @media (max-width: 61.93‬em) {
+    //     .header__list{
+    //         display: none;
+    //     }
+    // }
+}

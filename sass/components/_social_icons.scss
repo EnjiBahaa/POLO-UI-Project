@@ -1,0 +1,182 @@
+.socialmedia
+{
+    display: flex;
+    justify-content: center;
+    .social__icon
+    {
+        margin-right: 0.5rem;
+        text-decoration: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        line-height: 1.2rem;
+        padding: 0.5rem;
+        width: 3rem;
+        height: 3rem;
+        border-style: solid;
+        border-radius: 50%;
+        border-color: #f1f1f1;
+        background-color: #fff;
+        border-width: 0.1rem;
+        transition: .5s ease-in-out;
+        margin-bottom: 1.5rem;
+
+        .social__icon__i
+        {
+            display: flex;
+            color: $darkgraycolor;
+        }
+        .icon__span
+        {
+            display: flex;
+            font-size: 1.4rem;
+            color: $darkgraycolor;
+            display: none;
+        }
+        .span__text
+        {
+            font-size: 1.4rem;
+            opacity: 0;
+        }
+        &:hover
+        {
+            padding: 0 4rem;
+            border-style: solid;
+            border-radius: 1.5em;
+            padding: 1.5rem 5rem;
+            background-color: #efefef;
+            overflow: hidden;
+            opacity: 1;
+            transition: .3s ease-in-out;
+
+            .icon__span
+            {
+                transition: .5s ease-in-out;
+                display: block;
+            }
+            .social__icon__i
+            {
+                left: 9px;
+                top: 8px;
+                transform: rotate(360deg);
+                margin-right: 1rem;
+                transition: all .8s ease 0s;
+            }
+            .span__text
+            {
+                left: 28px;
+                top: 0;
+                opacity: 1;
+                transition: left .5s ease 0s,opacity .5s ease 0s;
+                white-space: nowrap;
+                position: absolute;
+                text-align: left;
+            }
+        }
+    }
+}
+
+.social__swipeicon
+{
+    text-decoration: none;
+    display: inline-flex;
+    .rssicon
+    {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        width: 3rem;
+        height: 3rem;
+        border-width: 0.3rem;
+        border-style: solid;
+        border-radius: 20%;
+        border-color: $iconlightcolor;
+        background-color: $iconlightcolor;
+        overflow: hidden;
+        margin-right: 0.5rem;
+        .swipeicon__rss
+        {
+            text-align: center;
+            margin-top: 1.5rem; 
+            color: $darkgraycolor;
+            transition: .1s;
+        }
+        &:hover
+        {
+            border-color: $orangecolor;
+            background-color: $orangecolor;
+            .swipeicon__rss
+            {
+                color: #fff;
+                transform: translateY(-30px);     
+            }
+        }
+    }
+
+    .fbicon
+    {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        width: 3rem;
+        height: 3rem;
+        border-width: 0.3rem;
+        border-style: solid;
+        border-radius: 20%;
+        border-color: $iconlightcolor;
+        background-color: $iconlightcolor;
+        overflow: hidden; 
+        margin-right: 0.5rem;
+        .swipeicon__fb
+        {
+            font-size: 4rem;
+            text-align: center;
+            margin-top: 3rem; 
+            color: $darkgraycolor;
+            transition: .1s;
+        }
+        &:hover
+        {
+            border-color: $fbcolor;
+            background-color: $fbcolor;
+            .swipeicon__fb
+            {
+                color: #fff;
+                transform: translateY(-47px);     
+            }
+        }
+    }
+    .twticon
+    {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        width: 3rem;
+        height: 3rem;
+        border-width: 0.3rem;
+        border-style: solid;
+        border-radius: 20%;
+        border-color: $iconlightcolor;
+        background-color: $iconlightcolor;
+        overflow: hidden; 
+        margin-right: 0.5rem;
+        .swipeicon__twt
+        {
+            font-size: 4rem;
+            text-align: center;
+            margin-top: 3rem; 
+            color: $darkgraycolor;
+            transition: .1s;
+        }
+        &:hover
+        {
+            border-color: $twittercolor;
+            background-color:  $twittercolor;
+            .swipeicon__twt
+            {
+                color: $whitecolor;
+                transform: translateY(-47px);     
+            }
+        }
+    }
+}

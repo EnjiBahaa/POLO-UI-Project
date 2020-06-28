@@ -1,0 +1,29 @@
+@mixin hoverddl($top)
+{
+    &:hover
+    {
+        .item__link
+        {
+            color: blue;
+        }
+        .fa-angle-right
+        {
+            left: 17rem;
+        }
+        .sub__submenu
+        {
+            display: block;
+            left: 18rem;
+            top: $top;
+            box-shadow: 0px 1px 1px gray;
+            .submenu__link
+            {
+                &:hover
+                {
+                    color: blue;
+                }
+            }
+        }
+        }
+}
+    

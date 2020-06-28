@@ -1,0 +1,65 @@
+.btn
+{
+    //display: inline-flex;
+    line-height: 14px;    
+    text-decoration: none;
+    &--circle
+    {    
+        font-size: 2.5rem;
+        padding: 1rem 1.7rem;
+        border-style: solid;
+        &--big
+        {
+            width: 9rem;
+            height: 9rem;
+            border-width: 7px;
+            border-radius: 50%;
+            border-color:$whitecolor;
+        }   
+
+        &--small
+        {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 6rem;
+            height: 7rem;
+            padding: 3rem;
+            border-width: 5px;
+            border-radius: 60%;
+            border-color: $btnsmall;
+        }   
+    }
+    
+    &--rounded
+    {
+        font-size: 1.2rem;
+        font-family: "poppin_semibold";
+        text-align: center;
+        border-width: 0.2rem;
+        border-style: solid;
+        border-radius: 1.5em;
+        text-decoration: none;
+        height: 4rem;
+        width: 13rem;
+        color: #3d4552;
+        background-color: $whitecolor;
+        border-color: $btnbgrounded;
+        &--whitebg
+        {
+            padding: 1rem 2rem;
+        }
+        &--whitebgarrow
+        {
+            padding: 1.25rem 2rem;
+        }
+    }
+    .btn__text
+    {
+        display: inline-block;
+        transform: translateX(-7px);
+        padding: 0rem 0.5rem;
+        min-width: 9rem;
+    }
+    
+}

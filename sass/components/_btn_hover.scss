@@ -1,0 +1,57 @@
+.btn 
+{
+    &.btn--circle--big
+    {
+        transition: transform 100ms ease-out;
+        margin: 15px;
+        &:hover 
+        {
+            transform: scale(1.15); 
+        }
+    }
+    &.btn--circle--small
+    {
+        transition: transform 100ms ease-out;
+        margin: 15px;
+        &:hover 
+        {
+            transform: scale(1.15); 
+        }
+    }
+    
+    &.btn--rounded
+    {
+        &.btn--rounded--whitebg
+        {
+            &:hover
+            {
+                background-color: $iconlightcolor;
+                border-color: $iconlightcolor;
+            }
+        }
+        &.btn--rounded--whitebgarrow
+        {
+            transition: transform 100ms ease-in-out;
+            &:hover
+            {
+                background-color: $bgbtn;
+                box-shadow: 4px 8px 16px $bgbtnshadow;
+                
+                .btn__text
+                {
+                    transition: transform 0.1s ease-out;
+                    transform: translateX(0);
+                }
+                .fa-long-arrow-alt-right
+                {
+                    transition: transform 0.1s ease-out;
+                    transform: translateX(0);
+                    opacity: 1;
+                }
+                
+            }
+        }
+    }
+}
+
+

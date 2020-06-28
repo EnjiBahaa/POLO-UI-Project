@@ -1,0 +1,443 @@
+.card
+{
+    width: auto;
+    &--btn
+    {
+        .card__btnicon
+        {
+            position: relative;
+            height: 25rem;
+            width: 37rem;
+            &:hover
+            {
+                cursor: pointer;  
+                .btn__icon__left
+                {
+                    visibility: visible;
+                    animation: buttonleft 0.5s 1;
+                }
+                .btn__icon__right
+                {
+                    visibility: visible;
+                    animation: buttonright 0.5s 1;
+                }
+            }
+            .card__btn
+            {
+                width: 37rem;
+                height: 25.1rem;
+            }
+            
+            .btn__icon__right
+            {
+                // display: flex;
+                // justify-content: center;
+                // align-items: center;
+                text-decoration: none;
+                visibility: hidden;
+                position: absolute;
+                top: 10rem;
+                left: 33rem;
+                border-radius: 50%;
+                border: solid;
+                border-width: 0.75rem;
+                background-color: $btnsmall;
+                color: $whitecolor;
+                padding: 0rem 0.4rem;
+                border-color: $btnsmall;
+            }
+            .btn__icon__left
+            {
+                // display: flex;
+                // justify-content: center;
+                // align-items: center;
+                text-decoration: none;
+                visibility: hidden;
+                position: absolute;
+                top: 10rem;
+                left: 1rem;
+                border-radius: 50%;
+                border: solid;
+                border-width: 0.75rem;
+                background-color: $btnsmall;
+                color: $whitecolor;
+                padding: 0rem 0.4rem;
+                border-color: $btnsmall;
+            }     
+            @keyframes buttonleft{
+                0%
+                {
+                    left: -1rem;
+                }
+            } 
+            @keyframes buttonright{
+                0%
+                {
+                    left: 35rem;
+                }
+                100%
+                {
+                    left: 33rem;
+                }
+            }      
+        }
+        .card__zoombtn
+        {
+            position: relative;
+            .btn_icon_clone
+            {
+                position: absolute;
+                top: 11.5rem;
+                left: 19rem;
+                border-radius: 50%;
+                border: solid;
+                border-width: 0.75rem;
+                background-color: rgba(255, 255, 255, 0);
+                color: rgba(51, 50, 50, 0);
+                padding: 0rem 0.4rem;
+                border-color: rgba(255, 255, 255, 0);
+            }
+            .btn_icon_link
+            {
+                position: absolute;
+                top: 11.5rem;
+                left: 14rem;
+                padding: 0rem 0.4rem;
+                border-radius: 50%;
+                border: solid;
+                border-width: 0.75rem;
+                background-color: rgba(255, 255, 255, 0);
+                color: rgba(51, 50, 50, 0);
+                border-color: rgba(255, 255, 255, 0);                
+            }
+            .btn_icon_expand
+            {
+                position: absolute;
+                top: 11.5rem;
+                left: 14rem;
+                padding: 0rem 0.4rem;
+                border-radius: 50%;
+                border: solid;
+                border-width: 0.75rem;
+                background-color: rgba(255, 255, 255, 0);
+                color: rgba(51, 50, 50, 0);
+                border-color: rgba(255, 255, 255, 0);                
+            }
+            @keyframes icon_expand{
+                0%
+                {
+                    top: 12.5rem;
+                }
+            }
+            @keyframes icon_clone{
+                0%
+                {
+                    top: 12.5rem;
+                }
+            }
+            @keyframes icon_link{
+                0%
+                {
+                    top: 12.5rem;
+                }
+            }
+        }
+        .card__btnword
+        {
+            width: 37rem;
+            height: 49.3rem;
+            position: relative;
+            &:hover
+            {
+                cursor: pointer; 
+                         
+                .btnwork__bg
+                {
+                    opacity: 0.8;
+                }
+                .btn__icon__left
+                {
+                    visibility: visible;
+                    animation: buttonleft 0.5s 1;
+                }
+                .btn__icon__right
+                {
+                    visibility: visible;
+                    animation: buttonright 0.5s 1;
+                }
+                .btnwork__text
+                {
+                    .btnwork__head
+                    {
+                        visibility: visible;
+                        animation: texthead 0.5s 1;
+                    }
+                    .btnwork__span
+                    {
+                        visibility: visible;
+                        animation: textspan 0.5s 1;
+                    }
+                }
+            }
+            .btnwork__bg
+            {
+                top: 0;
+                opacity: 0;
+                position: absolute;
+                width: 37rem;
+                height: 50.3rem;
+                background-color: $whitecolor;
+            }
+            .btnwork__text
+            {
+                width: 37rem;
+                height: 49.3rem;
+                position: absolute;
+                text-align: center;
+                top: 0;
+                .btnwork__head
+                {
+                    visibility: hidden;
+                    top: 21rem;
+                    left: 9rem;
+                    position: absolute;
+                    font-size: 1.6rem;                    
+                }
+                .btnwork__span
+                {
+                    visibility: hidden;
+                    top: 23.5rem;
+                    left: 13rem;    
+                    position: absolute;
+                    font-size: 1.4rem;                    
+                }
+                @keyframes texthead
+                {
+                    0%
+                    {
+                        top: 23rem;   
+                    }
+                }
+                @keyframes textspan
+                {
+                    0%
+                    {
+                        top: 24.5rem;   
+                    }
+                }
+            }
+            .img__btnword
+            {
+                width: 37rem;
+                height: 50.3rem;
+            }
+            .btn__icon__right
+            {
+                text-decoration: none;
+                visibility: hidden;
+                position: absolute;
+                top: 22rem;
+                left: 33rem;
+                border-radius: 50%;
+                border: solid;
+                border-width: 0.75rem;
+                background-color: $btnsmall;
+                color: $whitecolor;
+                padding: 0rem 0.4rem;
+                border-color: $btnsmall;
+            }
+            .btn__icon__left
+            {
+                text-decoration: none;
+                visibility: hidden;
+                position: absolute;
+                top: 22rem;
+                left: 1rem;
+                border-radius: 50%;
+                border: solid;
+                border-width: 0.75rem;
+                background-color: $btnsmall;
+                color: $whitecolor;
+                padding: 0rem 0.4rem;
+                border-color: $btnsmall;
+            } 
+            @keyframes buttonleft{
+                0%
+                {
+                    left: -1rem;
+                }
+            } 
+            @keyframes buttonright{
+                0%
+                {
+                    left: 35rem;
+                }
+                100%
+                {
+                    left: 33rem;
+                }
+            }       
+        }
+    }
+
+    &--zoom
+    {
+        .card__zoombtn
+        {
+            cursor: pointer;  
+            overflow: hidden;
+            position: relative;
+            width: 37rem;
+            height: 25.1rem;
+            .img__zoombtn
+            {
+                position: absolute;
+                transition: all 0.8s ease-in-out;
+                width: 37rem;
+                height: 25.1rem;
+            }
+            .overlay__zoombtn
+            {
+                position: absolute;
+                background-color: rgba(79, 78, 78, 0);
+                width: 37rem;
+                height: 25.1rem;
+            }
+            &:hover
+            {
+                .img__zoombtn
+                {
+                    transform: scale(1.1);
+                }
+                .overlay__zoombtn
+                {
+                    background-color: rgba(79, 78, 78, 0.7);
+                }
+                .btn_icon_link
+                {
+                    background-color: rgba(255, 255, 255, 1);
+                    border-color: rgba(255, 255, 255, 1);
+                    color: rgba(51, 50, 50, 1);
+                    animation: icon_link 0.1s 1;
+                    &:hover
+                    {
+                    background-color: $bluecolor;
+                    border-color: $bluecolor;
+                    color: $whitecolor;
+                    }
+                }
+                .btn_icon_expand
+                {
+                    
+                    background-color: rgba(255, 255, 255, 1);
+                    border-color: rgba(255, 255, 255, 1);
+                    color: rgba(51, 50, 50, 1);
+                    animation: icon_expand 0.1s 1;
+                    &:hover
+                    {
+                    background-color: $bluecolor;
+                    border-color: $bluecolor;
+                    color: $whitecolor;
+                    }
+                }
+                .btn_icon_clone
+                {
+                    
+                    background-color: rgba(255, 255, 255, 1);
+                    border-color: rgba(255, 255, 255, 1);
+                    color: rgba(51, 50, 50, 1);
+                    animation: icon_clone 0.1s 1;
+                    &:hover
+                    {
+                    background-color: $bluecolor;
+                    border-color: $bluecolor;
+                    color: $whitecolor;
+                    }
+                }
+            }
+        }
+
+        .card__zoomwords
+        {
+            cursor: pointer;  
+            overflow: hidden;
+            position: relative;
+            width: 74rem;
+            height: 49.4rem;
+            .btn__img
+            {
+                position: absolute;
+                transition: all 0.8s ease-in-out;
+                width: 74rem;
+                height: 49.4rem;
+            }
+            .card__overlay
+            {
+                position: absolute;
+                background-color: $btnsmall;
+                opacity: 0;
+                width: 74rem;
+                height: 49.4rem;
+                .overlay__words__head
+                {
+                    color: $whitecolor;
+                    height: 4rem;
+                    width: 16rem;
+                    top: 22rem;
+                    right: 30rem;
+                    font-size: 1.6rem;
+                    position: absolute;
+                }          
+                .overlay__words__span
+                {
+                    color: $whitecolor;
+                    height: 4rem;
+                    width: 16rem;
+                    top: 24.5rem;
+                    right: 28rem;
+                    font-size: 1.4rem;
+                    position: absolute;
+                }
+    
+                @keyframes text{
+                    0%
+                    {
+                        top: 24rem;
+                    }
+                }
+                @keyframes text1{
+                    0%
+                    {
+                        top: 25rem;
+                    }
+                }
+            }
+    
+            &:hover
+            {
+                .img__zoombtn
+                {
+                    transform: scale(1.1);
+                }
+                .btn__img
+                {
+                    transform: scale(1.1);
+                }
+                .card__overlay
+                {
+                    opacity: 0.6;
+                }
+                .overlay__words__head
+                {
+                    animation: text 0.5s 1;
+                }
+                .overlay__words__span
+                {
+                    animation: text1 0.5s 1;
+                }
+            }            
+        }
+    }
+
+
+}

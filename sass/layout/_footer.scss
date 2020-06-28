@@ -1,0 +1,94 @@
+.footer
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    .footer__content
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 4rem;
+        .content__widget
+        {
+            width: 47.2rem;
+            height: 28rem;
+            .widget__title
+            {
+                color: $middlegraycolor;
+                margin-bottom: 2rem;
+            }
+            .widget__p
+            {
+                color: $graycolor;
+                line-height: 2rem;
+                margin-bottom: 4rem;
+            }
+            .widget__btn
+            {
+                justify-content: center;
+                align-items: center;
+                padding: 1rem;
+                background-color: $bluecolor;
+                color: $whitecolor;
+                border-radius: 0.5em;
+                &:hover
+                {
+                    background-color: rgb(45, 45, 230);
+                }
+            }
+        }
+        .content__list
+        {
+            display: flex;
+            justify-content: space-between;
+            .list__item
+            {
+                width: 13.7rem;
+                height: 28.4rem;
+                margin-bottom: 1rem;
+                .item__title
+                {
+                    color: $middlegraycolor;
+                    margin-bottom: 1.5rem;
+                }
+                .item__list
+                {
+                    list-style-type: none; 
+                    text-decoration: none;  
+                    line-height: 3rem;
+                    .list__subitem
+                    {
+                        text-decoration: none;
+                        color: rgb(48, 47, 47);
+                        &:hover
+                        {
+                            color: $bluecolor;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .copyright__content
+    {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(235, 235, 235);
+        height: 6rem;
+        .content__title
+        {
+            color: $middlegraycolor;
+           .title__copyright
+           {
+               color: $middlegraycolor;
+               text-decoration: none;
+               color: rgb(48, 47, 47);
+           } 
+        }
+    }
+}

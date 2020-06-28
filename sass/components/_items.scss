@@ -1,0 +1,49 @@
+.list__item
+    {
+        display: inline-block;
+        padding: 1.5rem 1.5rem;
+        list-style-type: none;
+        
+        .item__link
+        {
+            color: #1F1F1F;
+            text-decoration: none;
+            font-size: 1.5rem ;
+        }
+        .submenu
+        {
+            display: none;
+        }
+        .sub__submenu
+        {
+            display: none;
+        }
+        .submenu__link
+        {
+            color: #1F1F1F;
+            text-decoration: none;
+        }
+        .ddllist
+        {
+            .column__two
+            {
+                left: 19rem;
+            }
+            .column__three
+            {
+                left: 38rem;
+            }
+            .column__four
+            {
+                left: 57rem;
+            }
+            .column__five
+            {
+                left: 77rem;
+            }
+            .column__six
+            {
+                left: 95rem;
+            }
+        }
+}

@@ -1,0 +1,75 @@
+.fas
+{
+    &.fa-play
+    {
+        color: #fff;
+        width: 40px;
+        padding: 1.7rem 1.3rem;
+    }
+    
+    &.fa-long-arrow-alt-right
+    {
+        color: #333333;
+        transform: translateX(7px);
+        opacity: 0;
+    }
+
+    &.fa-rocket, &.fa-flask, &.fa-umbrella
+    {
+        color: #333333;
+        width: 26px;
+    }
+    &.fa-angle-right, &.fa-angle-left
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.5rem;
+    }
+    &.fa-circle, &.fa-clone, &.fa-link, &.fa-expand
+    {
+        font-size: 1.5rem;
+    }
+    &.fa-external-link-square-alt , &.fa-chart-bar
+    {
+        font-size: 1rem;
+        color: rgb(48, 48, 48); 
+        margin-right: 0.8rem;
+    }
+}
+.fab
+{
+    &.fa-facebook-f, &.fa-twitter, &.fa-instagram, &.fa-twitter
+    {
+        font-size: 1.2rem;    
+        justify-content: auto ;
+        list-style-type: none;
+    }
+}
+.far
+{
+    &.fa-envelope
+    {
+        font-size: 1.2rem;
+        color: #4C5667; 
+        justify-content: auto ;
+    }
+}
+.fa
+{
+    &.fa-list-ul, &.fa-exclamation-circle, &.fa-magic, &.fa-play-circle, &.fa-quote-right, &.fa-toggle-off, &.fa-flag-checkered, &.fa-angle-double-right
+    {
+        font-size: 1rem;
+        color: rgb(48, 48, 48); 
+        margin-right: 0.8rem;
+    }
+    &.fa-rss
+    {
+        font-size: 1.2rem; 
+        margin-top: 1.5rem ;
+    }
+    &.fa-paper-plane
+    {
+        font-size: 1.2rem; 
+    }
+}

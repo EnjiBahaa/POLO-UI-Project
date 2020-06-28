@@ -1,0 +1,48 @@
+//abstracts
+@import 'abstracts/variables';
+@import 'abstracts/functions';
+@import 'abstracts/mixins';
+@import 'abstracts/placeholders';
+
+//base
+@import 'base/base';
+@import 'base/typograghy';
+@import 'base/reset';
+
+//components
+@import 'components/buttons';
+@import 'components/items';
+@import 'components/items_ddl'; 
+@import 'components/submenu';
+@import 'components/sub__submenu';
+@import 'components/icons';
+@import 'components/btn_hover';
+@import 'components/font';
+@import 'components/text';
+@import 'components/images';
+@import 'components/social_icons';
+@import 'components/cards';
+@import 'components/ddllistcolumns';
+@import 'components/form';
+@import 'components/progressbar';
+@import 'components/Sections/touchus';
+@import 'components/Sections/aboutcompany';
+@import 'components/Sections/home';
+@import 'components/Sections/members';
+@import 'components/Sections/card';
+@import 'components/Sections/work';
+@import 'components/Sections/service';
+@import 'components/Sections/core';
+@import 'components/core';
+
+//layout    
+@import 'layout/navigation';
+@import 'layout/header';
+@import 'layout/footer';
+
+//pages
+@import 'pages/index';  
+
+//themes
+
+//vendors

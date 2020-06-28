@@ -1,0 +1,16 @@
+.core
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    line-height: 5rem;
+    .core__features
+    {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 1rem;
+        width: 142rem;
+        height: 55rem;
+    }
+}
